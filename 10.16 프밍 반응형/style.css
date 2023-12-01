@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul,li,ol {
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+header>section{
+    margin: 0px 100px;
+}
+
+.logo_img{
+    width: 150px;
+    height: 20px;
+}
+.menu{
+    display: flex;
+}
+.nav_item{
+    margin: 0px 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.language_img{
+    width: 30px;
+    height: 30px;
+}
+.main_banner{
+    background-image: url(./img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner_btn{
+    width: 350px;
+    height: 100px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(224, 224, 224, 0.582);
+    color: white;
+    margin: 10px 0px;
+    box-shadow: 5px 2px 10px 5px rgba(0, 0, 0, 0.397);
+}
+
+.banner_btn:hover{
+    cursor: pointer;
+}
+
+.mobile_menu{
+    display: none;
+}
+
+.mobile_logo{
+    display: none;
+}
+
+.mobile_close{
+    display: none;
+}
+
+@media (max-width: 1280px){
+    .logo{
+        display: none;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        left:-80vw;
+        background-color: rgba(0, 0, 0, 0.658);
+        width: 1000vw;
+        height: 100vh;
+        transition: all 1s ease-in-out;
+        transform: translate(70vw);
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 100vh;
+        background-color: white;
+    }
+    .nav_item{
+        margin: 20px 40px;
+        border-bottom: 1px solid gainsboro;
+        padding: 10px 0px;
+    }
+    .mobile_menu{
+        display: block;
+    }
+    .mobile_menu>a>img{
+        width: 30px;
+        height: 30px;
+    }
+    .mobile_logo{
+        display: block;
+    }
+    .mobile_close{
+        display: block;
+        width: 50vw;
+        background-color: white;
+        
+    }
+    .mobile_close_img{
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 20px 40px;
+    }
+}
