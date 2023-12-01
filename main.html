@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.I 융합실 신청 페이지</title>
+    <link rel="stylesheet" href="./main-style.css">
+</head>
+<body>
+    <header>
+        <h1>A.I 융합실 신청 페이지</h1>
+    </header>
+
+    <section>
+        <form class="form">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">학년/반/번호:</label>
+            <input type="text" id="number" name="number" required>
+            <label for="time">시작시간:</label>
+            <input type="time" class="time" name="time" required>
+            <label for="time">종료시간:</label>
+            <input type="time" class="time" name="time" required>
+           <button class="btn"> 신청하기</button>
+        </form>
+    </section>
+    <script>
+        const form = document.querySelector('.form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            window.location.href = "/list.html"
+        })
+    </script>   
+</body>
+</html>
